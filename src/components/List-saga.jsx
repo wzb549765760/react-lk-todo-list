@@ -7,7 +7,8 @@ import store from "../store";
 
 
 
-import {delListAction, initListAction, updateListAction} from '../store/actionCreators';
+// import {delListAction, initListAction1, updateListAction} from '../store/actionCreators';
+import {delListAction, updateListAction,initListActionSaga} from '../store/actionCreators';
 
 class List extends Component {
     constructor(prop) {
@@ -16,13 +17,12 @@ class List extends Component {
         //订阅store的改变
         this._handleStoreChange = this._handleStoreChange.bind(this);
         store.subscribe(this._handleStoreChange);
-
     }
 
     // getData(){
     //     http.get("/api/shop",{},(data)=>{
     //         if(data.responeStatus === "0"){
-    //             const action = initListAction(data.data.list);
+    //             const action = initListAction1(data.data.list);
     //             store.dispatch(action);
     //         }
     //     })
@@ -30,7 +30,8 @@ class List extends Component {
 
 
     componentWillMount() {
-        const action = initListAction();
+        // this.getData()
+        const action = initListActionSaga();
         store.dispatch(action);
         console.log('Component WILL MOUNT!')
     }

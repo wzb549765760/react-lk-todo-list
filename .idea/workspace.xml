@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fabec05f-93d8-416c-9eef-c0402a3fa99f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Redux/跨域.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/List-saga.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/index_redux_thunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/saga.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/List.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actionCreators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actionTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,12 +41,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSPX" />
-    <property name="last_opened_file_path" value="F:/人脸识别" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/store" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="F:\安装包\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\React\react-lk-todo-list\src\store" />
+      <recent name="F:\React\react-lk-todo-list\src\components" />
       <recent name="F:\React\react-lk-todo-list\src\components\Redux" />
     </key>
   </component>
@@ -98,7 +108,7 @@
       <workItem from="1575602779640" duration="19484000" />
       <workItem from="1575886056209" duration="5693000" />
       <workItem from="1575943110818" duration="3813000" />
-      <workItem from="1575978726770" duration="5826000" />
+      <workItem from="1575978726770" duration="16336000" />
     </task>
     <servers />
   </component>

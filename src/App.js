@@ -4,6 +4,7 @@ import React, {Component} from 'react';
 import Home from "./components/Home";
 // const Home = asyncComponent(() => import("./containers/Home"));
 import List from "./components/List";
+import List_saga from "./components/List-saga";
 import ObjDetail from "./components/ObjDetail"
 // import http from "./Util/http";
 
@@ -64,6 +65,7 @@ export default class App extends Component {
                 <Switch>
                     <Route exact path="/" component={Home}/>
                     <Route exact path="/list" component={List}/>
+                    <Route exact path="/list-saga" component={List_saga}/>
                     <Route exact path="/detail" component={ObjDetail}/>
                 </Switch>
             </BrowserRouter>

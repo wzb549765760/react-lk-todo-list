@@ -26,6 +26,7 @@ export default (state = defaultState, action) => {
         });
         return newStats;
     } else if (action.type === INIT_LIST_ITEM) {
+        debugger;
         newStats = JSON.parse(JSON.stringify(state));
         newStats.list = action.list;
         return newStats;
