@@ -19,3 +19,6 @@ export const initListAction = (list)=>({
     type:INIT_LIST_ITEM,
     list
 });
+
+
+/*redux-thunk  能让放函数，不仅仅是对象*/

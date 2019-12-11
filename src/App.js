@@ -5,7 +5,7 @@ import Home from "./components/Home";
 // const Home = asyncComponent(() => import("./containers/Home"));
 import List from "./components/List";
 import ObjDetail from "./components/ObjDetail"
-import http from "./Util/http";
+// import http from "./Util/http";
 
 // import ReactDom from "react-dom";
 
@@ -21,13 +21,12 @@ export default class App extends Component {
     }
 
     getData() {
-        // http.post("hs-deposit/api/activity/applyBonus", {
-        //     "mchtNo": "023310109121794",
-        //     "snNo": "013960180223",
-        //     "termNo": "70001156"
-        // }, (data) => {
-        //     // alert(JSON.stringify(data))
-        // });
+        // http.get("/api/shop",{},(data)=>{
+        //     if(data.responeStatus === "0"){
+        //         const action = initListAction(data.data.list);
+        //         store.dispatch(action);
+        //     }
+        // })
     }
 
     componentWillMount() {
