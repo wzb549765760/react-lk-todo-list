@@ -6,7 +6,7 @@ export default class Input extends Component {
         super(prop);
         this.state = {
             name:prop.name
-        }
+        };
         this._inputChange = this._inputChange.bind(this);
         this.inputRef = React.createRef();
     }
