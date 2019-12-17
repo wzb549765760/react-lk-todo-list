@@ -1,19 +1,24 @@
 import React, {Component} from 'react';
 // import Input from './components/Input'
 // import {asyncComponent} from 'react-async-component';
-import Home from "./components/Home";
+import Home from "./../Home";
 // const Home = asyncComponent(() => import("./containers/Home"));
-import List from "./components/List";
-import List_saga from "./components/List-saga";
-import ObjDetail from "./components/ObjDetail"
+import List from "./../List";
+import List_saga from "./../List-saga";
+import ObjDetail from "./../ObjDetail"
 // import http from "./Util/http";
 
 // import ReactDom from "react-dom";
 
+import {connect} from "react-redux";
 
-import {Switch, Route, BrowserRouter} from 'react-router-dom'; // 模块导入 | React Router 包含了以下这几个主要模块
 
-export default class App extends Component {
+import {Switch, Route, BrowserRouter} from 'react-router-dom';
+import {delListAction, initListAction, initListActionSaga, updateListAction} from "../../store/actionCreators";
+
+// import store from "../../store";
+
+class Index extends Component {
     constructor(prop) {
         super(prop);
         this.state = {
@@ -74,3 +79,34 @@ export default class App extends Component {
     }
 
 }
+
+/*mapDispatchToProps  将redux里面的所有的action 配发给所有的组件*/
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        getList() {
+            const action = initListAction();
+            dispatch(action);
+        },
+        delList(listId) {
+            const action = delListAction(listId);
+            dispatch(action)
+        },
+        updateList(id, obj) {
+            const action = updateListAction(id, obj);
+            dispatch(action)
+        },
+        initListSaga(){
+            const action = initListActionSaga();
+            dispatch(action);
+        }
+    }
+};
+
+const mapStateToProps = (state) => {
+    return {
+        list:state.list
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Index)

@@ -1,22 +1,23 @@
 import React, {Component} from 'react'
 import {Link} from "react-router-dom";
+import {delListAction, initListAction, initListActionSaga, updateListAction} from "../store/actionCreators";
+import {connect} from "react-redux";
 
-import store from "../store";
 
 // import http from "../Util/http";
 
 
 
 // import {delListAction, initListAction1, updateListAction} from '../store/actionCreators';
-import {delListAction, updateListAction,initListActionSaga} from '../store/actionCreators';
+// import {delListAction, updateListAction,initListActionSaga} from '../store/actionCreators';
 
 class List extends Component {
     constructor(prop) {
         super(prop);
-        this.state = store.getState();
-        //订阅store的改变
-        this._handleStoreChange = this._handleStoreChange.bind(this);
-        store.subscribe(this._handleStoreChange);
+        // this.state = store.getState();
+        // //订阅store的改变
+        // this._handleStoreChange = this._handleStoreChange.bind(this);
+        // store.subscribe(this._handleStoreChange);
     }
 
     // getData(){
@@ -31,8 +32,7 @@ class List extends Component {
 
     componentWillMount() {
         // this.getData()
-        const action = initListActionSaga();
-        store.dispatch(action);
+        this.props.initListSaga()
         console.log('Component WILL MOUNT!')
     }
 
@@ -42,23 +42,25 @@ class List extends Component {
 
     _delList(listId){
         //调用action
-        const  action = delListAction(listId);
-        store.dispatch(action)
+        this.props.delList(listId)
+        // const  action = delListAction(listId);
+        // store.dispatch(action)
     }
 
     _toUpdata(obj,e){
         let val = e.currentTarget.value,id = obj.id;
         obj.sex = val;
-        const action = updateListAction(id,obj);
-        store.dispatch(action);
+        this.props.updateList(id,obj)
+        // const action = updateListAction(id,obj);
+        // store.dispatch(action);
     }
 
-    _handleStoreChange(){
-        this.setState(store.getState)
-    }
+    // _handleStoreChange(){
+    //     this.setState(store.getState)
+    // }
 
     render() {
-        let {list} = this.state;
+        let {list} = this.props;
         console.log(list);
         if(list){
             return (
@@ -90,5 +92,31 @@ class List extends Component {
 
     }
 }
+/*mapDispatchToProps  将redux里面的所有的action 配发给所有的组件*/
+const mapDispatchToProps = (dispatch) => {
+    return {
+        getList() {
+            const action = initListAction();
+            dispatch(action);
+        },
+        delList(listId) {
+            const action = delListAction(listId);
+            dispatch(action)
+        },
+        updateList(id, obj) {
+            const action = updateListAction(id, obj);
+            dispatch(action)
+        },
+        initListSaga(){
+            const action = initListActionSaga();
+            dispatch(action);
+        }
+    }
+};
 
-export default List;
+const mapStateToProps = (state) => {
+    return {
+        list:state.list
+    }
+};
+export default connect(mapStateToProps, mapDispatchToProps)(List);

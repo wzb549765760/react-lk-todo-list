@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fabec05f-93d8-416c-9eef-c0402a3fa99f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Redux/react-redux介绍.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Redux/react_router概念.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Input.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupProxy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReactRedux/Index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/List-saga.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List-saga.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,15 +37,16 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSPX" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/store" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Redux" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="F:\安装包\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\React\react-lk-todo-list\src\components\Redux" />
+      <recent name="F:\React\react-lk-todo-list\src\components\ReactRedux" />
       <recent name="F:\React\react-lk-todo-list\src\store" />
       <recent name="F:\React\react-lk-todo-list\src\components" />
-      <recent name="F:\React\react-lk-todo-list\src\components\Redux" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -103,7 +108,7 @@
       <workItem from="1575978726770" duration="19533000" />
       <workItem from="1576142830395" duration="2326000" />
       <workItem from="1576150695285" duration="5750000" />
-      <workItem from="1576462894625" duration="13250000" />
+      <workItem from="1576462894625" duration="23883000" />
     </task>
     <servers />
   </component>
